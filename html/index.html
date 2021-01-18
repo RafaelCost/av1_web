@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <script type=""></script>
         <meta charset="utf-8">
-
+                <script type="text/javascript" src="../js/chat.js"></script>
     </head>
 
     <body>
@@ -44,44 +44,29 @@
          
 
         </div>
+        <div>
+            <h1> Mural de mensagens</h1>
+            <h2>Deixe seu recado</h2>
 
-        <h1> Mural de mensagens</h1>
-        <h2>Deixe seu recado</h2>
-
-        <form action="/pagina-processa-dados-do-form" method="post">
             <div>
-                <label for="name"> Name: </label>
-                <input type="text" id="name"/>
-            </div>
-            
-            <div>
-                <label for="msg"> Mensage: </label>
-                <input type="text" id="msg"/>
-            </div>
-
-            <div class="button">
-                <button class="btn_Send_Menssage" type="submit" onclick="create_Menssage()">Send</button>
-            </div>
-
-            <script>
-                function create_Menssage() {
-
-                    var box = document.createElement("div");
-                    var name = document.getElementById("name").value;
-                    var menssage = document.getElementById("msg").value;
+                <form name="message" action="">
+                    <label id = "inputname" for="name"> Name: </label>
+                    <input name="username" type="text" id="username" />
                     
-                    document.write(name + ":" + menssage);
-                    
-                }
+                    <label id = "inputmsg" for="msg"> Mensage: </label>
+                    <input name="usermsg" type="text" id="usermsg" />
 
-            </script>
-        </form>
+                    <div class="button">
+                        <button type="button" onclick="SendMessage()">Submit</button>
+                    </div>
 
-        <script>
-            if (document.querySelector("body").style.background == "Black") {
-                document.querySelector("btn_Send_Menssage").style.background = "White";
-            }
-        </script>
+                </form>
+            </div>
+
+            <div id = "muralmessage">
+                
+            </div>
+        </div>
         
          <footer>
 
