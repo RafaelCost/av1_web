@@ -71,11 +71,19 @@ body {
     margin-right: 5%;
     margin-top: 3%;
 }
+.conteiner {
+
+    
+}
+.form {
+    position: relative;
+    
+}
 h1 {
     margin-top: 10%;
 }
 form {
-    width: 40%;
+    width: 35%;
     /* Para ver as bordas do formulário */
     padding: 1em;
     border: 1px solid #CCC;
@@ -85,22 +93,25 @@ form div + div {
     margin-top: 10px;
 }
 label {
-    
+    margin-top: 5%;
     display: inline-block;
     width: 100px;
     text-align: right;
+    font-size: 20px;
 }
 input {
     width: 300px;
+    height: 25px;
     box-sizing: border-box;
     border-radius: 5px ;
     border-color: gray;
 }
 .button {
-    margin-left: 58%;
+    float: right;
+    margin-top: 10px;
     
 }
-.btn_Send_Menssage {
+.btn_Send_Message {
     font-size: 16px;
     font-weight: bold;
     background-color: black;
@@ -109,4 +120,8 @@ input {
     height: 40px;
     border-radius: 4px;
     border-color: black;
+}
+#muralmessage{
+    
+    display: inline-block;
 }

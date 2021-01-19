@@ -8,6 +8,8 @@
         <script type=""></script>
         <meta charset="utf-8">
                 <script type="text/javascript" src="../js/chat.js"></script>
+                <script type="text/javascript" src="../js/changeBackgroundColor.js"></script>
+                <script type="text/javascript" src="../js/pop-up.js"></script>
     </head>
 
     <body>
@@ -21,34 +23,13 @@
                 <button class="b3" onclick="set_Color(3)"> White </button> 
             </div>
             
-            <script>
-
-                function set_Color(num) {
-                    if(num == 1) {
-                        document.querySelector("body").style.background = "Black";
-                        document.querySelector("body").style.color = "White";
-                    }
-
-                    if(num == 2) {
-                        document.querySelector("body").style.background = "Red";
-                        document.querySelector("body").style.color = "Initial";
-                    }
-
-                    if(num == 3) {
-                        document.querySelector("body").style.background = "Initial";
-                        document.querySelector("body").style.color = "Initial";
-                    }
-                }
-
-            </script>
-         
-
         </div>
-        <div>
+
+        <div class="container">
             <h1> Mural de mensagens</h1>
             <h2>Deixe seu recado</h2>
 
-            <div>
+            <div class="form">
                 <form name="message" action="">
                     <label id = "inputname" for="name"> Name: </label>
                     <input name="username" type="text" id="username" />
@@ -57,7 +38,7 @@
                     <input name="usermsg" type="text" id="usermsg" />
 
                     <div class="button">
-                        <button type="button" onclick="SendMessage()">Submit</button>
+                        <button class="btn_Send_Message" type="button" onclick="SendMessage()"> Submit </button>
                     </div>
 
                 </form>
@@ -72,17 +53,9 @@
 
             <div class="rodapé">
 
-                 <button class="b4" onclick="abrir_Janela()"> Créditos </button>
+                 <button class="b1" onclick="openWindow()"> Créditos </button>
 
             </div>
-            
-            <script type="text/javascript">
-
-                function abrir_Janela() {
-                     window.open('time.html','time','toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=500,height=500')
-                 }
-
-            </script>
 
         </footer>
 
