@@ -13,57 +13,60 @@
     </head>
 
     <body>
-        <div class="header">
+        <div class="imageBackground">
+        <div class="all">
+            <div class="header">
 
-            <img class="icon" src="../imgs/icon.jpg" alt="icon" >
-            <p> WEB </p>
+                <img class="icon" src="../imgs/logo.png" alt="icon" >
 
-            <div class="background_Color_Buttons">
-                <button class="b1" onclick="set_Color(1)"> Black </button>
-                <button class="b2" onclick="set_Color(2)"> Red </button> 
-                <button class="b3" onclick="set_Color(3)"> White </button> 
-            </div>
-            
-        </div>
-
-        <div class="container">
-
-            <figure>
-                <img class="main" src="../imgs/mural_2.png" alt="mural">
-            </figure>
-
-            <h1> Mural de mensagens</h1>
-            <h2>Deixe seu recado</h2>
-
-            <div class="form">
-                <form name="message" action="">
-                    <label id = "inputname" for="name"> Name: </label>
-                    <input name="username" type="text" id="username" />
-                    <br>
-                    <label id = "inputmsg" for="msg"> Message: </label>
-                    <input name="usermsg" type="text" id="usermsg" />
-                    <br>
-                    <div class="button">
-                        <button class="btn_Send_Message" type="button" onclick="SendMessage()"> Submit </button>
-                    </div>
-
-                </form>
-            </div>
-
-            <div id = "muralmessage">
+                <div class="background_Color_Buttons">
+                    <button class="b1" onclick="set_Color(1)"> Black </button>
+                    <button class="b2" onclick="set_Color(2)"> Red </button> 
+                    <button class="b3" onclick="set_Color(3)"> White </button> 
+                </div>
                 
             </div>
-        </div>
-        
-         <footer>
 
-            <div class="rodape">
+            <div class="container">
 
-                 <button class="btn_Send_Message" onclick="openWindow()"> Credits </button>
+                <!-- <figure>
+                    <img class="main" src="../imgs/background_2.png" alt="mural">
+                </figure> -->
 
+                <h1> Mural de mensagens</h1>
+                <h2>Deixe seu recado</h2>
+
+                <div class="form">
+                    <form name="message" action="">
+                        <label id = "inputname" for="name"> Name: </label>
+                        <input name="username" type="text" id="username" />
+                        <br>
+                        <label id = "inputmsg" for="msg"> Message: </label>
+                        <input name="usermsg" type="text" id="usermsg" />
+                        <br>
+                        <div class="button">
+                            <button class="btn_Send_Message" type="button" onclick="SendMessage()"> Submit </button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div id = "muralmessage">
+                    
+                </div>
             </div>
+            
+            <footer>
 
-        </footer>
+                <div class="rodape">
+
+                    <button class="btn_Send_Message" onclick="openWindow()"> Credits </button>
+
+                </div>
+
+            </footer>
+        </div>
+        </div>
 
 
             
