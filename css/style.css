@@ -3,16 +3,28 @@ body {
     font-family: sans-serif;
     font-size: 15px;
     font-weight: bold;
+    background-color: black;
+    color: white;
     
 }
 .header {
     display: inline-flexbox;
     position: relative;
-    background-color: gray;
 }
 .icon {
-    height: 6%; 
-    width: 6%;
+    height: 4%; 
+    width: 4%;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+p {
+    font-size: 25px;
+    display: inline;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    
 }
 .background_Color_Buttons {
     display: inline-flex;
@@ -21,51 +33,39 @@ body {
     
 }
 .b1 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background-color: black;
     color: white;
-    width: 100px;
-    height: 50px;
-    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    border-color: white;
+    border-radius: 25px;
     cursor: pointer;
     margin-right: 5%;
     margin-top: 3%;
 }
 .b2 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background-color: red;
     color: white;
-    width: 100px;
-    height: 50px;
-    border-radius: 4px;
-    border-color: red;
-    cursor: pointer;
-    margin-right: 5%;
-    margin-top: 3%;
-}
-.b3 {
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white;
-    color: black;
-    width: 100px;
-    height: 50px;
-    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
     border-color: white;
     cursor: pointer;
     margin-right: 5%;
     margin-top: 3%;
 }
-.b4 {
-    font-size: 20px;
+.b3 {
+    font-size: 15px;
     font-weight: bold;
-    background-color: red;
-    color: black;
-    width: 100px;
-    height: 50px;
-    border-radius: 4px;
+    background-color: purple;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
     border-color: white;
     cursor: pointer;
     margin-right: 5%;
@@ -80,7 +80,11 @@ body {
     
 }
 h1 {
-    margin-top: 10%;
+    margin-top: 5%;
+}
+.main {
+    position: relative;
+    float: right;
 }
 form {
     width: 35%;
@@ -112,22 +116,27 @@ input {
     
 }
 .btn_Send_Message {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    background-color: black;
+    background-color: rgb(17, 196, 41);
     color: white;
-    width: 100px;
+    width: 120px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 25px;
     border-color: black;
+    cursor: pointer;
+    
 }
 #muralmessage{
-    
     display: inline-block;
+    width: 100%;
 }
 
 .integrantes{
     position:relative;
     height: 100px; 
     width: 100px;
+}
+figcaption {
+    margin-top: 10px;
 }
