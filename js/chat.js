@@ -16,13 +16,14 @@ function ShowMessages() {
         var msg_ = Object.values(msg)
         console.log(Object.values(msg));
         var form = document.createElement("form");
-        form.style.margin = "10px"
+        form.style.marginTop = "20px";
         
         var text_element = document.createTextNode(msg_[0]+ ': '+ msg_[1]);
         form.appendChild(text_element)
 
         var button_element = document.createElement("BUTTON");
         button_element.className = "btn_Send_Message";
+        button_element.style.marginLeft = "20px"
         button_element.setAttribute("type", "button");
         button_element.setAttribute("onclick", "DeleteMessage("+i+")");
         var t = document.createTextNode("Excluir");
